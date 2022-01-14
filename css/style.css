@@ -89,7 +89,7 @@ h1 {
 #############################
 */
 
-.main-section {
+.home-section {
     display: flex;
 }
 .intro {
@@ -107,7 +107,7 @@ h1 {
 
 /* 
 #############################
-#       Main Section        #
+#       Partner Section     #
 #############################
 */
 
@@ -121,8 +121,83 @@ h1 {
     align-items: center;
     padding: 50px 0;
     border: 2px solid transparent;
-    border-image: linear-gradient(45deg, rgba(128, 128, 128, 0.01), rgb(212, 212, 212), rgba(128, 128, 128, 0.01));
+    border-image: linear-gradient(
+        45deg,
+        rgba(128, 128, 128, 0.01),
+        rgb(212, 212, 212),
+        rgba(128, 128, 128, 0.01)
+    );
     border-image-slice: 1;
     border-right: 0;
     border-left: 0;
+}
+/* 
+#############################
+#       Popular Section     #
+#############################
+*/
+
+.popular-section h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+}
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.collection {
+    padding: 10px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 5px 5px 40px rgba(128, 128, 128, 0.251);
+    border-radius: 10px;
+    transition: transform 1s;
+}
+.collection:hover {
+    transform: translateY(-10px);
+}
+.collection img {
+    width: 100%;
+    height: 250px;
+    transition: transform 1s;
+}
+.camera-image {
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+}
+.camera-image:hover img {
+    transform: scale(1.1);
+}
+.collection h3 {
+    color: #222;
+    font-size: 30px;
+}
+.collection price {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+.price {
+    color: #222;
+    font-size: 20px;
+}
+.rating {
+    color: darkorange;
+}
+.rating span {
+    color: #222;
+    margin-left: 10px;
+}
+
+.collection p {
+    color: #333;
 }
