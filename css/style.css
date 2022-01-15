@@ -235,7 +235,44 @@ h1 {
 }
 /* 
 #############################
-#       Popular Section     #
+#       Newsletter Section     #
+#############################
+*/
+
+.newsletter {
+    background: crimson;
+    margin-top: 100px;
+    padding: 30px;
+    color: #fff;
+}
+.newsletter .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-title {
+    text-align: center;
+}
+.newsletter-form input,
+.newsletter-form button {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #f5f5f5;
+    border: 0;
+}
+.newsletter-form input {
+    border-radius: 10px;
+}
+.newsletter-form input:focus {
+    outline: 5px solid #0a0826;
+}
+.newsletter-form button {
+    border-radius: 20px;
+    background: #0a0826;
+}
+/* 
+#############################
+#       Footer Section     #
 #############################
 */
 .footer-section {
