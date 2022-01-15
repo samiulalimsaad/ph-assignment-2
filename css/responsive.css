@@ -1,0 +1,77 @@
+/* 
+#############################
+#       Mobile Device       #
+#############################
+*/
+
+@media only screen and (max-width: 688px) {
+    h1 {
+        font-size: 20px;
+    }
+    main {
+        /* background: rgba(128, 128, 128, 0.432); */
+        padding: 0 10px;
+    }
+    .half-width {
+        width: 100%;
+    }
+    .link-btn {
+        margin: 0;
+    }
+    .container {
+        width: 100%;
+        padding: 0px;
+    }
+    .menu {
+        display: none;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .header:hover .menu {
+        display: block;
+        padding: 0;
+    }
+
+    .home-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .half-width,
+    .intro {
+        text-align: center;
+        width: 100%;
+    }
+    .display-item img {
+        width: auto;
+        height: 250px;
+    }
+    .partner-section {
+        margin: 100px 0;
+        padding: 0px;
+    }
+    .partners {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .popular-section {
+        padding: 0px;
+    }
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+    }
+    .seemore-btn {
+        justify-content: center;
+    }
+    .newsletter .container {
+        flex-direction: column;
+    }
+    .newsletter-form button {
+        margin-top: 10px;
+    }
+}
