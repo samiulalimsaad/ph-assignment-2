@@ -1,6 +1,11 @@
+:root {
+    --white-color: #f5f5f5;
+    --black-color: #333;
+}
+
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #f5f5f5;
+    background-color: var(--white-color);
     margin: 0;
     padding: 0;
 }
@@ -12,7 +17,10 @@ body {
 */
 h1 {
     font-size: 50px;
-    color: #333;
+    color: var(--black-color);
+}
+p {
+    color: var(--black-color);
 }
 .container {
     padding: 0 100px;
@@ -24,7 +32,7 @@ h1 {
     display: inline-block;
     margin-top: 20px;
     background: crimson;
-    color: #fff;
+    color: var(--white-color);
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
@@ -51,6 +59,7 @@ h1 {
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .logo {
     display: flex;
@@ -58,7 +67,7 @@ h1 {
 }
 .logo a {
     text-decoration: none;
-    color: #333;
+    color: var(--black-color);
     font-size: 30px;
     font-weight: bolder;
     transition: transform 1s;
@@ -74,7 +83,7 @@ h1 {
 }
 .menu li a {
     text-decoration: none;
-    color: #333;
+    color: var(--black-color);
     padding: 10px 20px;
     transition: 0.6s;
     font-weight: bolder;
@@ -155,7 +164,7 @@ h1 {
 .popular-section h2 {
     text-align: center;
     font-size: 30px;
-    color: #333;
+    color: var(--black-color);
 }
 .collections {
     width: 100%;
@@ -192,17 +201,17 @@ h1 {
     transform: scale(1.1);
 }
 .collection h3 {
-    color: #222;
+    color: var(--black-color);
     font-size: 30px;
 }
 .collection .price {
-    color: #333;
+    color: var(--black-color);
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 .price {
-    color: #222;
+    color: var(--black-color);
     font-size: 20px;
 }
 .rating {
@@ -214,7 +223,7 @@ h1 {
 }
 
 .collection p {
-    color: #333;
+    color: var(--black-color);
     margin: 0;
     padding: 0;
 }
@@ -240,7 +249,7 @@ h1 {
     background: crimson;
     margin-top: 100px;
     padding: 30px;
-    color: #fff;
+    color: var(--white-color);
 }
 .newsletter .container {
     display: flex;
@@ -275,12 +284,15 @@ h1 {
 .footer-section {
     background: #0a0826;
     padding: 30px;
-    color: #fff;
+    color: var(--white-color);
     text-align: center;
     margin-top: 100px;
 }
 .footer-title {
     font-size: 30px;
+}
+.footer-section p {
+    color: var(--white-color);
 }
 .social-icons {
     display: flex;
@@ -290,7 +302,7 @@ h1 {
 }
 .social-icons a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white-color);
 }
 .social-icons i {
     padding: 10px;
@@ -304,5 +316,6 @@ h1 {
     transition: transform 1s;
 }
 .social-icons a:hover i {
+    color: crimson;
     transform: rotate(360deg);
 }

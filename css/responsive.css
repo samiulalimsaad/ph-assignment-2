@@ -6,7 +6,7 @@
 
 @media only screen and (max-width: 688px) {
     h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
     main {
         /* background: rgba(128, 128, 128, 0.432); */
@@ -89,7 +89,7 @@
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
     main {
         padding: 0 20px;
