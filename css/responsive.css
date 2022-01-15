@@ -28,6 +28,7 @@
     .header {
         display: flex;
         flex-direction: column;
+        padding: 0 10px;
     }
     .header:hover .menu {
         display: block;
@@ -63,7 +64,11 @@
     }
     .collections {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(auto, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .collection {
+        justify-self: center;
     }
     .seemore-btn {
         justify-content: center;
@@ -73,5 +78,50 @@
     }
     .newsletter-form button {
         margin-top: 10px;
+    }
+}
+
+/* 
+#############################
+#       Tablet Device       #
+#############################
+*/
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    h1 {
+        font-size: 20px;
+    }
+    main {
+        padding: 0 20px;
+    }
+    .container {
+        width: 100%;
+        padding: 0px;
+    }
+    .logo a {
+        font-size: 20px;
+    }
+    .display-item img {
+        width: auto;
+        height: 300px;
+    }
+    .partners {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .seemore-btn {
+        justify-content: center;
+    }
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .newsletter-form button {
+        margin-top: 20px;
     }
 }
